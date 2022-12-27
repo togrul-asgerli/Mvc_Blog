@@ -1,0 +1,35 @@
+﻿
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <title>_Layout</title>
+    <link href="~/Content/css/style-liberty.css" rel="stylesheet" />
+</head>
+<body>
+    @Html.Partial("_Header")
+    <div>
+        @RenderBody()
+    </div>
+    @Html.Partial("_Footer")
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    <script src="~/Content/js/jquery-1.7.2.js"></script>
+    <script src="~/Content/js/jquery-3.3.1.min.js"></script>
+    <script src="~/Content/js/jquery.countup.js"></script>
+    <script src="~/Content/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/Content/js/jquery.prettyPhoto.js"></script>
+    <script src="~/Content/js/jquery.quicksand.js"></script>
+    <script src="~/Content/js/jquery.waypoints.min.js"></script>
+    <script src="~/Content/js/owl.carousel.js"></script>
+    <script src="~/Content/js/script.js"></script>
+    <script src="~/Content/js/search.js"></script>
+    <script src="~/Content/js/theme-change.js"></script>
+</body>
+</html>

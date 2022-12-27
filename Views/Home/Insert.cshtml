@@ -1,0 +1,19 @@
+﻿@model MyBLog.Models.EntityFrameWork.ToDoList
+@{
+    ViewBag.Title = "Insert";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Insert</h2>
+
+@using (Html.BeginForm("List", "Home", FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.dates)
+        @Html.TextBoxFor(m => m.dates, new { @class = "form-control" })
+    </div>
+    @Html.HiddenFor(m => m.id)
+    <button type="submit" class="btn btn-success">Update</button>
+}
+
+

@@ -1,0 +1,33 @@
+﻿@using MyBLog.Models.EntityFrameWork
+@{
+    ViewBag.Title = "List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>List</h2>
+<a class="btn btn-primary" href="/Home/Insert">Insert</a>
+<table class="table table-bordered ss" >
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Date</th>
+            <th>Jobs</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.id</td>
+                <td>@item.dates</td>
+                <td>@item.list</td>
+                <td><a class="btn btn-primary btn-danger" href="/Home/Update/@item.dates">Update</a></td>
+                <td><a class="btn btn-primary btn-warning" href="/Home/Delete/@item.list">Delete</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div class="salam">
+    
+</div>
+
